@@ -9,16 +9,25 @@ function EmailDnd() {
   return (
     <div className='econtainer'>
         <div className='enav'>
-            this
+            <h3>CUSTOM EMAIL</h3>
+            <div className='email_btn'>
+                <button>Save Design</button>
+                <button>Send Email</button>
+            </div>
         </div>
         <div className='email_wrapper'>
             <EmailEditor 
                 ref={emailEditorRef}
                 onReady={onEReady}
-                style={{ minHeight: '100%' }}
+                style={{ height: '100%' }} // Note: Ensure parent has height
                 options={{
                     displayMode: "email",
-                    projectId: "286025"
+                    projectId: "286025",
+                    appearance: {
+                        theme: "modern_dark",
+                        values: {
+                        }
+                    }
                 }} 
             />
         </div>
