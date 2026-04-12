@@ -4,10 +4,32 @@
   box-sizing: border-box;
 }
 
-.container {
+/*
+* ##########
+* ###############
+* ####################
+* EMAIL STYLES
+* ####################
+* ###############
+* ##########
+*/
+
+.econtainer {
   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#editorcont {
-  height: 100%;
+.econtainer .enav {
+  height: 8vh;
+  background-color: green;
+  flex-shrink: 0
+}
+
+.email_wrapper {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
 }

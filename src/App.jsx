@@ -1,25 +1,16 @@
-import React, { useRef } from 'react';
-import {EmailEditor} from 'react-email-editor';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom"
+import EmailDnd from "./pages/EmailDnd"
 
 function App() {
-  const emailEditorRef=useRef(null)
+  const routes = createRoutesFromElements(
+    <Route>
+      <Route index element={<EmailDnd />} />
+    </Route>
+  )
 
-  const onEReady = () => {
-    console.log("Email is ready")
-  }
-
+  const routers = createBrowserRouter(routes)
   return (
-    <div className='container'>
-      <EmailEditor 
-        ref={emailEditorRef}
-        onReady={onEReady}
-        style={{ minHeight: '100vh' }}
-        options={{
-          displayMode: "email",
-          projectId: "286025"
-        }} 
-        />
-    </div>
+    <RouterProvider router={routers} />
   )
 }
 
