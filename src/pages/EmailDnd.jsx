@@ -19,18 +19,14 @@ function EmailDnd() {
             <EmailEditor 
                 ref={emailEditorRef}
                 onReady={onEReady}
-                style={{ height: '100%' }} // Note: Ensure parent has height
+                style={{ height: '100%' }}
                 options={{
                     displayMode: "email",
-                    projectId: "286025",
-                    appearance: {
-                        theme: "modern_dark",
-                        values: {
-                        }
-                    }
-                }} 
+                    projectId: "286025"
+                }}
             />
         </div>
+        <div className=''></div>
     </div>
   )
 }
