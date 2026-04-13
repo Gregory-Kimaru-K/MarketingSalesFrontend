@@ -26,7 +26,20 @@ function EmailDnd() {
                 }}
             />
         </div>
-        <div className=''></div>
+        <div className='send_wrapper'>
+            <div className='send_card'>
+                <h1>&#x2718;</h1>
+                <h2>SEND EMAIL</h2>
+                <div class="input-group">
+                    <input required type="text" name="text" autocomplete="off" class="input" />
+                    <label class="user-label">First Name</label>
+                </div>
+                <div class="input-group">
+                    <input required type="text" name="text" autocomplete="off" class="input" />
+                    <label class="user-label">First Name</label>
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
